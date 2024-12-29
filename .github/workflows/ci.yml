@@ -21,7 +21,7 @@ jobs:
 #VERSIONS
           - name: 23-alpine-glibc2.34-r0
             context: 23/alpine-glibc
-            platforms: linux/amd64,linux/arm64
+            platforms: linux/amd64
             tags: |
               23-alpine-glibc
 #VERSIONS
