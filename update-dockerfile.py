@@ -25,7 +25,7 @@ def write_file(file, contents):
         f.write(contents)
 
 def update_alpine_gblic():
-    template = read_file("Dockerfile-node-alpine-glibc.template")
+    template = read_file("Dockerfile-alpine-glibc.template")
 
     for version in node_versions:
         rendered = template \
