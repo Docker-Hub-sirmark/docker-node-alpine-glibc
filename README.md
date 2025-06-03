@@ -8,24 +8,24 @@ If you need to update your libc library cache, use `/usr/glibc-compat/sbin/ldcon
 ## Supported tags and respective `Dockerfile` links
 No `latest` tag, please use specific version tags.
 
- - [`23-alpine-glibc`](https://github.com/Docker-Hub-sirmark/docker-node-alpine-glibc/blob/main/23/alpine-glibc/Dockerfile)
+ - [`24-alpine-glibc`](https://github.com/Docker-Hub-sirmark/docker-node-alpine-glibc/blob/main/24/alpine-glibc/Dockerfile)
 
 ## Docker Pull Command
 
 ```console
-docker pull sirmark/node:23-alpine-glibc
+docker pull sirmark/node:24-alpine-glibc
 ```
 
 ## Usage Example
 Pull and run.
 ```console
-$ docker pull sirmark/node:23-alpine-glibc
-$ docker run --rm -it sirmark/node:23-alpine-glibc
+$ docker pull sirmark/node:24-alpine-glibc
+$ docker run --rm -it sirmark/node:24-alpine-glibc
 ```
 
 Use in your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 ```dockerfile
-FROM sirmark/node:23-alpine-glibc
+FROM sirmark/node:24-alpine-glibc
 
 WORKDIR /myapp
 
