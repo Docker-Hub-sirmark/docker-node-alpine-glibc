@@ -4,7 +4,7 @@ import os
 import sys
 
 node_versions = [
-    "24",
+    "25",
 ]
 
 glibc_version = "2.34-r0"
