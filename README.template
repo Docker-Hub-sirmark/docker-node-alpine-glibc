@@ -8,24 +8,24 @@ If you need to update your libc library cache, use `/usr/glibc-compat/sbin/ldcon
 ## Supported tags and respective `Dockerfile` links
 No `latest` tag, please use specific version tags.
 
- - [`%%NODE-VERSION%%-alpine-glibc`](https://github.com/Docker-Hub-sirmark/docker-node-alpine-glibc/blob/main/%%NODE-VERSION%%/alpine-glibc/Dockerfile)
+ - [`%%NODE-VERSION%%-alpine-glibc%%GLIBC-VERSION%%`](https://github.com/Docker-Hub-sirmark/docker-node-alpine-glibc/blob/main/%%NODE-VERSION%%/alpine-glibc/Dockerfile)
 
 ## Docker Pull Command
 
 ```console
-docker pull sirmark/node:%%NODE-VERSION%%-alpine-glibc
+docker pull sirmark/node:%%NODE-VERSION%%-alpine-glibc%%GLIBC-VERSION%%
 ```
 
 ## Usage Example
 Pull and run.
 ```console
-$ docker pull sirmark/node:%%NODE-VERSION%%-alpine-glibc
-$ docker run --rm -it sirmark/node:%%NODE-VERSION%%-alpine-glibc
+$ docker pull sirmark/node:%%NODE-VERSION%%-alpine-glibc%%GLIBC-VERSION%%
+$ docker run --rm -it sirmark/node:%%NODE-VERSION%%-alpine-glibc%%GLIBC-VERSION%%
 ```
 
 Use in your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 ```dockerfile
-FROM sirmark/node:%%NODE-VERSION%%-alpine-glibc
+FROM sirmark/node:%%NODE-VERSION%%-alpine-glibc%%GLIBC-VERSION%%
 
 WORKDIR /myapp
 
