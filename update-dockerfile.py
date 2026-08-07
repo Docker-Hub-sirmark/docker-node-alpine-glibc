@@ -7,7 +7,7 @@ node_versions = [
     "26",
 ]
 
-glibc_version = "2.42"
+glibc_version = "2.44"
 
 docker_arches = [
     "linux/amd64",
